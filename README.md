@@ -1,3 +1,6 @@
+# Project Overview
+This repository explores the use of generative models to synthesize medical images for research, augmentation, and data-scarcity scenarios. The documentation has been expanded for easier onboarding, reproducibility, and academic referencing.
+
 # Generating synthetic medical images
 Automated diagnosis of any kind are hampered by the small size, lack of 
 diversity and expensiveness of available dataset of medical images. To tackle
@@ -99,6 +102,13 @@ There are lots of general datasets' repositories out there, which may be worht l
 - [Zenodo](https://zenodo.org/)
 - [Hugging Face](https://huggingface.co/docs/datasets/)
 
+## How to Run
+
+1. Clone the repo  
+2. Install dependencies  
+3. Prepare dataset  
+4. Start training  
+
 ## Reproducing the results 
 
 ### Dedicated `conda` environment
@@ -126,3 +136,26 @@ as jupyter kernel, by typing:
 ```bash
 python -m ipykernel install --user --name=hamgan
 ```
+## Repository Structure (Updated)
+
+- `models/` – Contains generator and discriminator architecture files  
+- `data/` – Placeholder for datasets  
+- `utils/` – Helper functions for training and preprocessing  
+- `train.py` – Training script  
+- `README.md` – Project documentation 
+
+## Common Issues & Fixes
+
+**CUDA out of memory:**  
+Reduce batch size.
+
+**Images look noisy:**  
+Train for more epochs or check dataset normalization.
+
+## Documentation Improvements (by Raghava Kalyan Inguva)
+
+- Added dataset preparation guide  
+- Improved project overview  
+- Added repository structure explanation  
+- Added troubleshooting section  
+- Enhanced general documentation clarity  
